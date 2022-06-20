@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/highlightjs/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/highlightjs?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship"></a>
-	<a href="https://github.com/catppuccin/highlightjs/issues"><img src="https://img.shields.io/github/issues/catppuccin/highlightjs?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/highlightjs/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/highlightjs?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/highlightjs/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/highlightjs?colorA=363a4f&colorB=b7bdf8&style=for-the-badge&logo=starship"></a>
+	<a href="https://github.com/catppuccin/highlightjs/issues"><img src="https://img.shields.io/github/issues/catppuccin/highlightjs?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/highlightjs/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/highlightjs?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -34,5 +34,5 @@ Not yet. c:
 </p>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=302d41&colorB=c9cbff"/></a>
+	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=302d41&colorB=b7bdf8"/></a>
 </p>
