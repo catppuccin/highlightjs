@@ -1,5 +1,6 @@
-.catppuccin-mocha code .hljs {
-  background: #1e1e2e;
+.catppuccin-mocha code.hljs {
+  color: rgb(var(--text));
+  background: rgb(var(--base));
 }
 .catppuccin-mocha code .hljs-keyword {
   color: rgb(var(--mauve));
@@ -140,8 +141,9 @@
   background: rgba(var(--red), 15%);
 }
 
-.catppuccin-macchiato code .hljs {
-  background: #24273a;
+.catppuccin-macchiato code.hljs {
+  color: rgb(var(--text));
+  background: rgb(var(--base));
 }
 .catppuccin-macchiato code .hljs-keyword {
   color: rgb(var(--mauve));
@@ -282,8 +284,9 @@
   background: rgba(var(--red), 15%);
 }
 
-.catppuccin-frappe code .hljs {
-  background: #303446;
+.catppuccin-frappe code.hljs {
+  color: rgb(var(--text));
+  background: rgb(var(--base));
 }
 .catppuccin-frappe code .hljs-keyword {
   color: rgb(var(--mauve));
@@ -424,8 +427,9 @@
   background: rgba(var(--red), 15%);
 }
 
-.catppuccin-latte code .hljs {
-  background: #eff1f5;
+.catppuccin-latte code.hljs {
+  color: rgb(var(--text));
+  background: rgb(var(--base));
 }
 .catppuccin-latte code .hljs-keyword {
   color: rgb(var(--mauve));

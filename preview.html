@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Catppuccin Highlight.js</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="//cdn.tailwindcss.com"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/coffeescript.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/haskell.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/scala.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script>
+      var baseUrl =
+        "https://raw.githubusercontent.com/catppuccin/catppuccin/main/samples/";
+      function getSample(language) {
+        console.log(language);
+        return fetch(baseUrl + language)
+          .then((res) => res.text())
+          .then((text) => {
+            var sampleElem = document.querySelector("#sample");
+            sampleElem.innerHTML = text;
+            sampleElem.className = "hljs language-" + language.split(".")[0];
+            hljs.highlightElement(sampleElem);
+          });
+      }
+      getSample("rust.rs");
+    </script>
+    <link rel="stylesheet" href="/dist/catppuccin-highlight.css" />
+  </head>
+  <body
+    class="min-h-screen mx-auto max-w-3xl relative bg-black"
+    x-data="{language: 'rust.rs', flavor: 'catppuccin-mocha' }"
+  >
+    <div
+      class="absolute top-2 right-2 flex gap-4 items-baseline bg-gray-800 text-gray-50 rounded px-2 py-1"
+    >
+      <label for="flavor">Flavor</label>
+      <select id="flavor" x-model="flavor" class="bg-gray-900 rounded">
+        <option value="catppuccin-latte">Latte</option>
+        <option value="catppuccin-frappe">Frappe</option>
+        <option value="catppuccin-macchiato">Macchiato</option>
+        <option value="catppuccin-mocha">Mocha</option>
+      </select>
+
+      <label for="language">Language</label>
+      <select
+        id="language"
+        x-model="language"
+        x-on:change="getSample(language)"
+        x-init="getSample(language)"
+        class="bg-gray-900 rounded"
+      >
+        <option value="bash.sh">Bash</option>
+        <option value="coffeescript.coffee">CoffeeScript</option>
+        <option value="cpp.cpp">C++</option>
+        <option value="css.css">CSS</option>
+        <option value="go.go">Go</option>
+        <option value="haskell.hs">Haskell</option>
+        <option value="html.html">HTML</option>
+        <option value="java.java">Java</option>
+        <option value="javascript.js">JavaScript</option>
+        <option value="json.json">JSON</option>
+        <option value="kotlin.kt">Kotlin</option>
+        <option value="lua.lua">Lua</option>
+        <option value="markdown.md">Markdown</option>
+        <option value="python.py">Python</option>
+        <option value="rust.rs">Rust</option>
+        <option value="scala.scala">Scala</option>
+        <option value="sql.sql">SQL</option>
+        <option value="toml.toml">TOML</option>
+        <option value="typescript.ts">TypeScript</option>
+        <option value="yaml.yaml">YAML</option>
+      </select>
+    </div>
+    <div :class="flavor">
+      <pre class="pt-8">
+        <code style="display: block; padding: 1em; border-radius: 0.5em;" id="sample"></code>
+      </pre>
+    </div>
+  </body>
+</html>

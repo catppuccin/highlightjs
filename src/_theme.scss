@@ -58,8 +58,14 @@ $fontStyles: (
 
 @each $flavor, $color in catppuccin.$palette {
   .catppuccin-#{$flavor} code {
-    .hljs {
-      background: #{map-get($color, "base")};
+    &.hljs {
+      @if $hexOutput {
+        color: map-get($color, "text");
+        background: map-get($color, "base");
+      } @else {
+        color: rgb(var(--text));
+        background: rgb(var(--base));
+      }
     }
 
     @each $key, $value in $highlights {
