@@ -1,0 +1,87 @@
+@use "catppuccin";
+
+$hexOutput: true !default;
+
+$highlights: (
+  "keyword": "mauve",
+  "built_in": "red",
+  "type": "yellow",
+  "literal": "peach",
+  "number": "peach",
+  "operator": "teal",
+  "punctuation": "subtext1",
+  "property": "teal",
+  "regexp": "pink",
+  "string": "green",
+  "char.escape_": "green",
+  "subst": "subtext0",
+  "symbol": "flamingo",
+  "variable": "mauve",
+  "variable.language_": "mauve",
+  "variable.constant_": "peach",
+  "title": "blue",
+  "title.class_": "yellow",
+  "title.function_": "blue",
+  "params": "text",
+  "comment": "surface2",
+  "doctag": "red",
+  "meta": "peach",
+  "section": "blue",
+  "tag": "subtext0",
+  "name": "mauve",
+  "attr": "blue",
+  "attribute": "green",
+  "bullet": "teal",
+  "code": "green",
+  "emphasis": "red",
+  "strong": "red",
+  "formula": "teal",
+  "link": "sapphire",
+  "quote": "green",
+  "selector-tag": "yellow",
+  "selector-id": "blue",
+  "selector-class": "teal",
+  "selector-attr": "mauve",
+  "selector-pseudo": "teal",
+  "template-tag": "flamingo",
+  "template-variable": "flamingo",
+  "diff-addition": "green",
+  "diff-deletion": "red",
+);
+
+$fontStyles: (
+  "emphasis": "italic",
+  "strong": "bold",
+  "link": "italic",
+  "quote": "italic",
+);
+
+@each $flavor, $color in catppuccin.$palette {
+  .catppuccin-#{$flavor} code {
+    .hljs {
+      background: #{map-get($color, "base")};
+    }
+
+    @each $key, $value in $highlights {
+      .hljs-#{$key} {
+        @if $hexOutput {
+          color: map-get($color, $value);
+        } @else {
+          color: rgb(var(--#{$value}));
+        }
+
+        @if map-has-key($fontStyles, $key) {
+          @if map-get($fontStyles, $key) == "bold" {
+            font-weight: bold;
+          } @else if map-get($fontStyles, $key) == "italic" {
+            font-style: italic;
+          }
+        }
+
+        @if ($key == "diff-addition" or $key == "diff-deletion") {
+          background: rgba(var(--#{$value}), 15%);
+        }
+      }
+    }
+  }
+}
