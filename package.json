@@ -1,0 +1,33 @@
+{
+  "name": "@catppuccin/highlightjs",
+  "version": "0.1.0",
+  "description": "Soothing pastel theme for Highlight.js",
+  "repository": "https://github.com/catppuccin/highlightjs.git",
+  "author": "Catppuccin Org <releases@catppuccin.com>",
+  "contributors": [
+    "winston <hey@winston.sh>"
+  ],
+  "funding": [
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/catppuccin"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/catppuccin"
+    }
+  ],
+  "files": [
+    "css/**"
+  ],
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rimraf dist && sass src:css --no-source-map --style=compressed",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "rimraf": "^4.1.2",
+    "sass": "^1.58.0"
+  }
+}
