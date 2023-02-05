@@ -1,6 +1,7 @@
 @use "catppuccin";
 
 $hexOutput: true !default;
+$prefix: "ctp-" !default;
 
 $highlights: (
   "keyword": "mauve",
@@ -63,8 +64,8 @@ $fontStyles: (
         color: map-get($color, "text");
         background: map-get($color, "base");
       } @else {
-        color: rgb(var(--text));
-        background: rgb(var(--base));
+        color: rgb(var(--#{$prefix}text));
+        background: rgb(var(--#{$prefix}base));
       }
     }
 
@@ -73,7 +74,7 @@ $fontStyles: (
         @if $hexOutput {
           color: map-get($color, $value);
         } @else {
-          color: rgb(var(--#{$value}));
+          color: rgb(var(--#{$prefix}#{$value}));
         }
 
         @if map-has-key($fontStyles, $key) {
@@ -85,7 +86,7 @@ $fontStyles: (
         }
 
         @if ($key == "diff-addition" or $key == "diff-deletion") {
-          background: rgba(var(--#{$value}), 15%);
+          background: rgba(var(--#{$prefix}#{$value}), 15%);
         }
       }
     }
