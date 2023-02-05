@@ -17,7 +17,7 @@
 
 ## Usage
 
-Add the CSS for your flavor your markup. You can do this by either getting the files via NPM or a CDN.
+Add the CSS for your preferred flavor in your markup. You can do this by either getting the files via NPM or a CDN.
 
 ### NPM:
 
@@ -33,7 +33,7 @@ You can then use the files in `@catppuccin/highlightjs/css` or `@catppuccin/high
 Embed the [Highlight.js script](https://highlightjs.org/download/), then one of our themes.
 
 > **Note**:
-> The "variable version" assumes that you have a flavour of Catppuccin already present in your CSS variables, e.g. `:root { --ctp-mauve:136,57,239; }`.
+> The "variable version" assumes that you have a flavor of Catppuccin already present in your CSS variables, e.g. `:root { --ctp-mauve:136,57,239; }`.
 > This is particularly useful if you use [Catppuccin TailwindCSS](https://github.com/catppuccin/tailwindcss)
 
 unpkg:
