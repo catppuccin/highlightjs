@@ -17,11 +17,49 @@
 
 ## Usage
 
-Not yet. c:
+Add the CSS for your flavor your markup. You can do this by either getting the files via NPM or a CDN.
+
+### NPM:
+
+Installation: 
+```bash
+npm install -D @catppuccin/highlightjs
+```
+
+You can then use the files in `@catppuccin/highlightjs/css` or `@catppuccin/highlightjs/sass`.
+
+### CDN:
+
+Embed the [Highlight.js script](https://highlightjs.org/download/), then one of our themes.
+
+> **Note**:
+> The "variable version" assumes that you have a flavour of Catppuccin already present in your CSS variables, e.g. `:root { --ctp-mauve:136,57,239; }`.
+> This is particularly useful if you use [Catppuccin TailwindCSS](https://github.com/catppuccin/tailwindcss)
+
+unpkg:
+```html
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-mocha.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-macchiato.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-frappe.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-latte.css">
+<!-- variable version -->
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin.variables.css">
+```
+
+jsdelivr:
+```html
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-mocha.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-macchiato.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-frappe.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-latte.css">
+<!-- variable version -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin.variables.css">
+```
 
 ## 💝 Thanks to
 
 - [Andreas Grafen](https://github.com/andreasgrafen)
+- [winston](https://github.com/nekowinston)
 
 &nbsp;
 
