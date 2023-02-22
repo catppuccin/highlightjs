@@ -1,4 +1,5 @@
 @use "@catppuccin/palette/scss/catppuccin";
+@use "sass:color";
 
 $highlights: (
   "keyword": "mauve",
@@ -85,7 +86,11 @@ $fontStyles: (
       }
 
       @if ($key == "diff-addition" or $key == "diff-deletion") {
-        background: rgba(var(--#{$prefix}#{$value}), 15%);
+        @if $hexOutput {
+          background: color.change(map-get($color, $value), $alpha: 0.15);
+        } @else {
+          background: rgba(var(--#{$prefix}#{$value}), 15%);
+        }
       }
     }
   }
