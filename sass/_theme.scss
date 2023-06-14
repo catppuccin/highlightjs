@@ -62,7 +62,7 @@ $fontStyles: (
   &.hljs {
     @if $hexOutput {
       color: map-get($color, "text");
-      background: map-get($color, "base");
+      background: map-get($color, "mantle");
     } @else {
       color: rgb(var(--#{$prefix}text));
       background: rgb(var(--#{$prefix}base));
