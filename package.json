@@ -24,9 +24,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "rimraf css; sass -I node_modules sass:css --no-source-map --style=compressed",
-    "prepack": "npm run build",
-    "release": "standard-version"
+    "build": "rimraf css && sass -I node_modules sass:css --no-source-map --style=compressed",
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@catppuccin/palette": "^0.1.6",
