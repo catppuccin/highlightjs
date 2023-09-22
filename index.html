@@ -3,10 +3,10 @@
   language: 'rust.rs',
   flavor: 'catppuccin-mocha',
   changeSample() {
-     return fetch(`https://raw.githubusercontent.com/catppuccin/catppuccin/main/samples/${this.language}`)
+    function encode(e){return e.replace(/[^]/g,function(e){return'&#'+e.charCodeAt(0)+';'})}
+    return fetch(`https://raw.githubusercontent.com/catppuccin/catppuccin/main/samples/${this.language}`)
       .then(res => res.text())
       .then(text => {
-        function encode(e){return e.replace(/[^]/g,function(e){return'&#'+e.charCodeAt(0)+';'})}
         $refs.sample.innerHTML = encode(text);
         $nextTick(() => hljs.highlightElement($refs.sample));
       });
@@ -19,6 +19,7 @@
     <script src="//cdn.tailwindcss.com"></script>
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/highlight.min.js"></script>
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/languages/coffeescript.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/languages/diff.min.js"></script>
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/languages/haskell.min.js"></script>
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/languages/scala.min.js"></script>
     <script defer src="//cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
@@ -38,31 +39,15 @@
       <label for="language">Language</label>
       <select
         id="language"
+        x-data="{ langs: { 'Bash': 'bash.sh', 'CoffeeScript': 'coffeescript.coffee', 'C++': 'cpp.cpp', 'CSS': 'css.css', 'Go': 'go.go', 'Haskell': 'haskell.hs', 'HTML': 'html.html', 'Java': 'java.java', 'JavaScript': 'javascript.js', 'JSON': 'json.json', 'Kotlin': 'kotlin.kt', 'Lua': 'lua.lua', 'Markdown': 'markdown.md', 'Python': 'python.py', 'Rust': 'rust.rs', 'Scala': 'scala.scala', 'SQL': 'sql.sql', 'TOML': 'toml.toml', 'TypeScript': 'typescript.ts', 'YAML': 'yaml.yaml' } }"
         x-model="language"
         x-on:change="changeSample()"
         x-init="changeSample()"
         class="border border-gray-500 bg-gray-50 dark:bg-gray-900 rounded px-1"
       >
-        <option value="bash.sh">Bash</option>
-        <option value="coffeescript.coffee">CoffeeScript</option>
-        <option value="cpp.cpp">C++</option>
-        <option value="css.css">CSS</option>
-        <option value="go.go">Go</option>
-        <option value="haskell.hs">Haskell</option>
-        <option value="html.html">HTML</option>
-        <option value="java.java">Java</option>
-        <option value="javascript.js">JavaScript</option>
-        <option value="json.json">JSON</option>
-        <option value="kotlin.kt">Kotlin</option>
-        <option value="lua.lua">Lua</option>
-        <option value="markdown.md">Markdown</option>
-        <option value="python.py">Python</option>
-        <option value="rust.rs">Rust</option>
-        <option value="scala.scala">Scala</option>
-        <option value="sql.sql">SQL</option>
-        <option value="toml.toml">TOML</option>
-        <option value="typescript.ts">TypeScript</option>
-        <option value="yaml.yaml">YAML</option>
+        <template x-for="[name, file] of Object.entries(langs)">
+          <option x-text="name" :value="file"></option>
+        </template>
       </select>
     </div>
     <div :class="flavor">
