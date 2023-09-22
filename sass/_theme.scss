@@ -44,8 +44,8 @@ $highlights: (
   "selector-pseudo": "teal",
   "template-tag": "flamingo",
   "template-variable": "flamingo",
-  "diff-addition": "green",
-  "diff-deletion": "red",
+  "addition": "green",
+  "deletion": "red",
 );
 
 $fontStyles: (
@@ -85,7 +85,7 @@ $fontStyles: (
         }
       }
 
-      @if ($key == "diff-addition" or $key == "diff-deletion") {
+      @if ($key == "addition" or $key == "deletion") {
         @if $hexOutput {
           background: color.change(map-get($color, $value), $alpha: 0.15);
         } @else {
