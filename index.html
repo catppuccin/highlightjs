@@ -46,7 +46,7 @@
         class="border border-gray-500 bg-gray-50 dark:bg-gray-900 rounded px-1"
       >
         <template x-for="[name, file] of Object.entries(langs)">
-          <option x-text="name" :value="file"></option>
+          <option x-text="name" :selected="file == `${language}`" :value="file"></option>
         </template>
       </select>
     </div>
