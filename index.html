@@ -8,6 +8,10 @@
       .then(res => res.text())
       .then(text => {
         $refs.sample.innerHTML = encode(text);
+        const classNames = $refs.sample.className.split(' hljs ');
+        if (classNames.length == 2) {
+          $refs.sample.className = `hljs ${classNames[1]}`;
+        }
         $nextTick(() => hljs.highlightElement($refs.sample));
       });
   }
