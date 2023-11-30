@@ -12,8 +12,6 @@ jobs:
         id: release
         with:
           release-type: node
-          extra-files: |
-            README.md
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
 
