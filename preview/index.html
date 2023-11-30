@@ -21,6 +21,7 @@
     langs: { 'AsciiDoc': 'asciidoc.adoc', 'Bash': 'bash.sh', 'CoffeeScript': 'coffeescript.coffee', 'C++': 'cpp.cpp', 'C#': 'cs.cs', 'CSS': 'css.css', 'Dart': 'dart.dart', 'Diff': 'diff.diff', 'Go': 'go.go', 'Haskell': 'haskell.hs', 'HTML': 'html.html', 'Java': 'java.java', 'JavaScript': 'javascript.js', 'JSON': 'json.json', 'JSX': 'jsx.jsx', 'Kotlin': 'kotlin.kt', 'Lua': 'lua.lua', 'Makefile': 'Makefile', 'Markdown': 'markdown.md', 'Nix': 'nix.nix', 'PHP': 'php.php', 'Python': 'python.py', 'Rust': 'rust.rs', 'Scala': 'scala.scala', 'SQL': 'sql.sql', 'TOML': 'toml.toml', 'TSX': 'tsx.tsx', 'TypeScript': 'typescript.ts', 'YAML': 'yaml.yaml' },
   }"
   :class="flavor"
+  :style="{colorScheme: flavor === 'latte' ? 'light' : 'dark'}"
   @keyup.left="$refs.flavor.prev()" @keyup.h="$refs.flavor.prev()"
   @keyup.up.stop="$refs.language.prev()" @keyup.j="$refs.language.next()"
   @keyup.down.stop="$refs.language.next()" @keyup.k="$refs.language.prev()"

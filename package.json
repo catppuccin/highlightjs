@@ -25,7 +25,8 @@
   "private": false,
   "scripts": {
     "build": "rimraf css && sass -I node_modules sass:css --no-source-map --style=compressed",
-    "preview": "serve ."
+    "build:pages": "npm run build && tailwindcss -mo preview/style.css",
+    "preview": "serve preview"
   },
   "devDependencies": {
     "@catppuccin/palette": "^0.2.0",
