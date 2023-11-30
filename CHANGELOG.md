@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.4](https://github.com/catppuccin/highlightjs/compare/v0.1.3...v0.1.4) (2023-11-30)
+
+
+### Bug Fixes
+
+* **ci:** build steps ([ebb677a](https://github.com/catppuccin/highlightjs/commit/ebb677aba610d9bff8cc542ed0f3e6d77f7ddede))
+
 ## [0.1.3](https://github.com/catppuccin/highlightjs/compare/v0.1.2...v0.1.3) (2023-09-22)
 
 
