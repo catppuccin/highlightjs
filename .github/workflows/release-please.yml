@@ -17,7 +17,6 @@ jobs:
         id: release
         with:
           release-type: node
-          token: ${{ secrets.GH_TOKEN }}
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
 
