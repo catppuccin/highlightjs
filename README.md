@@ -37,24 +37,28 @@ Embed the [Highlight.js script](https://highlightjs.org/download/), then one of 
 > This is particularly useful if you use [Catppuccin TailwindCSS](https://github.com/catppuccin/tailwindcss)
 
 unpkg:
+<!-- x-release-please-start-version -->
 ```html
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-mocha.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-macchiato.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-frappe.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin-latte.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin-mocha.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin-macchiato.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin-frappe.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin-latte.css">
 <!-- variable version -->
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs/css/catppuccin.variables.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin.variables.css">
 ```
+<!-- x-release-please-end -->
 
 jsdelivr:
+<!-- x-release-please-start-version -->
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-mocha.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-macchiato.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-frappe.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin-latte.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin-mocha.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin-macchiato.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin-frappe.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin-latte.css">
 <!-- variable version -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.0/css/catppuccin.variables.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin.variables.css">
 ```
+<!-- x-release-please-end -->
 
 ## 💝 Thanks to
 
