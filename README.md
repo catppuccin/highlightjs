@@ -32,12 +32,11 @@ You can then use the files in `@catppuccin/highlightjs/css` or `@catppuccin/high
 
 Embed the [Highlight.js script](https://highlightjs.org/download/), then one of our themes.
 
-> **Note**:
+> [!NOTE]
 > The "variable version" assumes that you have a flavor of Catppuccin already present in your CSS variables, e.g. `:root { --ctp-mauve:136,57,239; }`.
 > This is particularly useful if you use [Catppuccin TailwindCSS](https://github.com/catppuccin/tailwindcss)
 
 unpkg:
-<!-- x-release-please-start-version -->
 ```html
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin-mocha.css">
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin-macchiato.css">
@@ -46,10 +45,8 @@ unpkg:
 <!-- variable version -->
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.3/css/catppuccin.variables.css">
 ```
-<!-- x-release-please-end -->
 
 jsdelivr:
-<!-- x-release-please-start-version -->
 ```html
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin-mocha.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin-macchiato.css">
@@ -58,7 +55,6 @@ jsdelivr:
 <!-- variable version -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.3/css/catppuccin.variables.css">
 ```
-<!-- x-release-please-end -->
 
 ## 💝 Thanks to
 
