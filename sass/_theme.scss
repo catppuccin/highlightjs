@@ -55,42 +55,45 @@ $fontStyles: (
   "quote": "italic",
 );
 
-@mixin highlights($flavor, $output: "hex", $prefix: "ctp-") {
-  $color: map-get(catppuccin.$palette, $flavor);
-  $hexOutput: $output == "hex";
+@mixin highlights($flavor, $output: "hex", $prefix: "ctp-", $important: false) {
+  $colors: map-get(catppuccin.$palette, $flavor);
+  $hex: $output == "hex";
+
+  @function set($value, $isColor: true) {
+    @return if(
+        $isColor,
+        if($hex, map-get($colors, $value), rgb(var(--#{$prefix}#{$value}))),
+        $value
+      )
+      if($important, !important, null);
+  }
 
   &.hljs {
-    @if $hexOutput {
-      color: map-get($color, "text");
-      background: map-get($color, "base");
-    } @else {
-      color: rgb(var(--#{$prefix}text));
-      background: rgb(var(--#{$prefix}base));
-    }
+    color: set("text");
+    background: set("base");
   }
 
   @each $key, $value in $highlights {
     .hljs-#{$key} {
-      @if $hexOutput {
-        color: map-get($color, $value);
-      } @else {
-        color: rgb(var(--#{$prefix}#{$value}));
-      }
+      color: set($value);
 
       @if map-has-key($fontStyles, $key) {
         @if map-get($fontStyles, $key) == "bold" {
-          font-weight: bold;
+          font-weight: set("bold", false);
         } @else if map-get($fontStyles, $key) == "italic" {
-          font-style: italic;
+          font-style: set("italic", false);
         }
       }
 
       @if ($key == "addition" or $key == "deletion") {
-        @if $hexOutput {
-          background: color.change(map-get($color, $value), $alpha: 0.15);
-        } @else {
-          background: rgba(var(--#{$prefix}#{$value}), 15%);
-        }
+        background: set(
+          if(
+            $hex,
+            color.change(map-get($colors, $value), $alpha: 0.15),
+            rgba(var(--#{$prefix}#{$value}), 15%)
+          ),
+          false
+        );
       }
     }
   }
