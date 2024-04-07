@@ -1,0 +1,5 @@
+@use "theme";
+
+code {
+  @include theme.highlights("mocha", "variables", "ctp-", true);
+}

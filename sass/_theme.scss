@@ -55,41 +55,43 @@ $fontStyles: (
   "quote": "italic",
 );
 
-@mixin highlights($flavor, $output: "hex", $prefix: "ctp-") {
-  $color: map-get(catppuccin.$palette, $flavor);
-  $hexOutput: $output == "hex";
+@mixin highlights($flavor, $output: "hex", $prefix: "ctp-", $important: false) {
+  $colors: map-get(catppuccin.$palette, $flavor);
+  $hex: $output == "hex";
 
   &.hljs {
-    @if $hexOutput {
-      color: map-get($color, "text");
-      background: map-get($color, "base");
+    @if $hex {
+      color: map-get($colors, "text") if($important, !important, null);
+      background: map-get($colors, "base") if($important, !important, null);
     } @else {
-      color: rgb(var(--#{$prefix}text));
-      background: rgb(var(--#{$prefix}base));
+      color: rgb(var(--#{$prefix}text)) if($important, !important, null);
+      background: rgb(var(--#{$prefix}base)) if($important, !important, null);
     }
   }
 
   @each $key, $value in $highlights {
     .hljs-#{$key} {
-      @if $hexOutput {
-        color: map-get($color, $value);
+      @if $hex {
+        color: map-get($colors, $value) if($important, !important, null);
       } @else {
-        color: rgb(var(--#{$prefix}#{$value}));
+        color: rgb(var(--#{$prefix}#{$value})) if($important, !important, null);
       }
 
       @if map-has-key($fontStyles, $key) {
         @if map-get($fontStyles, $key) == "bold" {
-          font-weight: bold;
+          font-weight: bold if($important, !important, null);
         } @else if map-get($fontStyles, $key) == "italic" {
-          font-style: italic;
+          font-style: italic if($important, !important, null);
         }
       }
 
       @if ($key == "addition" or $key == "deletion") {
-        @if $hexOutput {
-          background: color.change(map-get($color, $value), $alpha: 0.15);
+        @if $hex {
+          background: color.change(map-get($colors, $value), $alpha: 0.15)
+            if($important, !important, null);
         } @else {
-          background: rgba(var(--#{$prefix}#{$value}), 15%);
+          background: rgba(var(--#{$prefix}#{$value}), 15%)
+            if($important, !important, null);
         }
       }
     }
