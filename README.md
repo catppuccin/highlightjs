@@ -45,7 +45,6 @@ unpkg:
 <!-- variable version -->
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.4/css/catppuccin.variables.css">
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.4/css/catppuccin.variables.important.css">
-
 ```
 
 jsdelivr:
