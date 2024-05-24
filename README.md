@@ -36,6 +36,8 @@ Embed the [Highlight.js script](https://highlightjs.org/download/), then one of 
 > The "variable version" assumes that you have a flavor of Catppuccin already present in your CSS variables, e.g. `:root { --ctp-mauve:136,57,239; }`.
 > This is particularly useful if you use [Catppuccin TailwindCSS](https://github.com/catppuccin/tailwindcss)
 
+<!-- x-release-please-start-version -->
+
 unpkg:
 ```html
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-mocha.css">
@@ -57,6 +59,8 @@ jsdelivr:
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin.variables.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin.variables.important.css">
 ```
+
+<!-- x-release-please-end -->
 
 ## 💝 Thanks to
 
