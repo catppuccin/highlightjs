@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.2](https://github.com/catppuccin/highlightjs/compare/v0.2.1...v0.2.2) (2024-05-24)
+
+
+### Build system & distribution
+
+* fix tag name ([#39](https://github.com/catppuccin/highlightjs/issues/39)) ([48f21bd](https://github.com/catppuccin/highlightjs/commit/48f21bdae28c0d0a86676b21cd030f395eef2976))
+* **release-please:** add `changelog-sections` ([#29](https://github.com/catppuccin/highlightjs/issues/29)) ([8a3a0e3](https://github.com/catppuccin/highlightjs/commit/8a3a0e3534bb603252b1b83e262d719a304f4b7d))
+* **release-please:** add `last-release-sha` ([#30](https://github.com/catppuccin/highlightjs/issues/30)) ([5bdc614](https://github.com/catppuccin/highlightjs/commit/5bdc61428764762217d0e362615741eb018a4a76))
+* **release-please:** delete manifest file ([#37](https://github.com/catppuccin/highlightjs/issues/37)) ([45ecd17](https://github.com/catppuccin/highlightjs/commit/45ecd1717c03856090a695e6873f23cbb655e741))
+* **release-please:** remove incorrect chars? ([#34](https://github.com/catppuccin/highlightjs/issues/34)) ([9b2704d](https://github.com/catppuccin/highlightjs/commit/9b2704df0f3fea30689dff96db0bc50c5b65aa02))
+* **release-please:** revert deletion of manifest file ([5ac9adb](https://github.com/catppuccin/highlightjs/commit/5ac9adb79558a62dbb2103f86ed6f36481c55f76))
+* **release-please:** update versions in README ([#28](https://github.com/catppuccin/highlightjs/issues/28)) ([cb9c86a](https://github.com/catppuccin/highlightjs/commit/cb9c86a04f3d90779df521700b237d9d9b1c470f))
+
 ## [0.2.1](https://github.com/catppuccin/highlightjs/compare/highlightjs-v0.2.0...highlightjs-v0.2.1) (2024-05-24)
 
 
