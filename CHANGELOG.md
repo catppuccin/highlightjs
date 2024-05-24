@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/catppuccin/highlightjs/compare/v0.1.4...v0.2.0) (2024-05-24)
+
+
+### Features
+
+* add `!important` variables variant ([#15](https://github.com/catppuccin/highlightjs/issues/15)) ([31fdec3](https://github.com/catppuccin/highlightjs/commit/31fdec334898bfebb128fd59d49457faa55f56e8))
+
 ## [0.1.4](https://github.com/catppuccin/highlightjs/compare/v0.1.3...v0.1.4) (2023-11-30)
 
 
