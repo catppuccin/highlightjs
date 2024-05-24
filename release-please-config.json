@@ -1,14 +1,30 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "last-release-sha": "e41757325391800da61cbc4dfec9681e39016ea6",
   "packages": {
     ".": {
+      "package-name": "",
       "release-type": "node",
       "extra-files": [
         {
-          "path": "./README.md",
+          "path": "README.md",
           "type": "generic"
         }
       ]
     }
-  }
+  },
+  "changelog-sections": [
+    { "type": "feat", "section": "Features" },
+    { "type": "feature", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "perf", "section": "Performance Improvements" },
+    { "type": "revert", "section": "Reverts" },
+    { "type": "docs", "section": "Documentation", "hidden": true },
+    { "type": "style", "section": "Styles", "hidden": true },
+    { "type": "chore", "section": "Miscellaneous Chores", "hidden": true },
+    { "type": "refactor", "section": "Code Refactoring", "hidden": true },
+    { "type": "test", "section": "Tests", "hidden": true },
+    { "type": "build", "section": "Build system & distribution", "hidden": false },
+    { "type": "ci", "section": "Continuous Integration", "hidden": true }
+  ]
 }

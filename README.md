@@ -12,25 +12,45 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/sample.png"/>
+	<img src="assets/preview.webp"/>
 </p>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+<img src="assets/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="assets/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="assets/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="assets/mocha.webp"/>
+</details>
 
 ## Usage
 
-Add the CSS for your preferred flavor in your markup. You can do this by either getting the files via NPM or a CDN.
+Add the CSS for your preferred flavor in your markup. You can do this by either getting the files from npm, or through a CDN.
 
-### NPM:
+### npm
 
-Installation: 
+Install the `@catppuccin/highlightjs` package with your preferred package manager.
+
 ```bash
 npm install -D @catppuccin/highlightjs
 ```
 
 You can then use the files in `@catppuccin/highlightjs/css` or `@catppuccin/highlightjs/sass`.
 
-### CDN:
+### CDN
 
-Embed the [Highlight.js script](https://highlightjs.org/download/), then one of our themes.
+Embed the [Highlight.js script](https://highlightjs.org/download/) along with one of our themes.
 
 > [!NOTE]
 > The "variable version" assumes that you have a flavor of Catppuccin already present in your CSS variables, e.g. `:root { --ctp-mauve:136,57,239; }`.
@@ -38,30 +58,32 @@ Embed the [Highlight.js script](https://highlightjs.org/download/), then one of 
 
 <!-- x-release-please-start-version -->
 
-unpkg:
+#### unpkg
+
 ```html
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-mocha.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-macchiato.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-frappe.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-latte.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-latte.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-frappe.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-macchiato.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-mocha.css">
 <!-- variable version -->
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.important.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.rgb.css">
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.rgb.important.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.important.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.important.css">
 ```
 
-jsdelivr:
+#### jsDelivr
+
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-mocha.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-macchiato.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-frappe.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-latte.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-latte.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-frappe.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-macchiato.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-mocha.css">
 <!-- variable version -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.important.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.rgb.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.0/css/catppuccin-variables.rgb.important.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.important.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.important.css">
 ```
 
 <!-- x-release-please-end -->
