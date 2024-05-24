@@ -1,0 +1,9 @@
+@use "theme";
+
+code {
+  @include theme.highlights(
+    $flavor: "mocha",
+    $format: "variable",
+    $important: true
+  );
+}

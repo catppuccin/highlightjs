@@ -1,5 +1,5 @@
 @use "theme";
 
 code {
-  @include theme.highlights("macchiato", "hex");
+  @include theme.highlights($flavor: "macchiato");
 }
