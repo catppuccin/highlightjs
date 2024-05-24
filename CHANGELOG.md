@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **release-please:** revert deletion of manifest file ([5ac9adb](https://github.com/catppuccin/highlightjs/commit/5ac9adb79558a62dbb2103f86ed6f36481c55f76))
 * **release-please:** update versions in README ([#28](https://github.com/catppuccin/highlightjs/issues/28)) ([cb9c86a](https://github.com/catppuccin/highlightjs/commit/cb9c86a04f3d90779df521700b237d9d9b1c470f))
 
-## [0.2.1](https://github.com/catppuccin/highlightjs/compare/highlightjs-v0.2.0...highlightjs-v0.2.1) (2024-05-24)
+## [0.2.1](https://github.com/catppuccin/highlightjs/compare/v0.2.0...v0.2.1) (2024-05-24)
 
 
 ### Build system & distribution
