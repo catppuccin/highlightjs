@@ -44,6 +44,7 @@ unpkg:
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.4/css/catppuccin-latte.css">
 <!-- variable version -->
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.4/css/catppuccin.variables.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.1.4/css/catppuccin.variables.important.css">
 ```
 
 jsdelivr:
@@ -54,6 +55,7 @@ jsdelivr:
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.4/css/catppuccin-latte.css">
 <!-- variable version -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.4/css/catppuccin.variables.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.1.4/css/catppuccin.variables.important.css">
 ```
 
 ## 💝 Thanks to
