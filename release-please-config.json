@@ -6,7 +6,7 @@
       "release-type": "node",
       "extra-files": [
         {
-          "path": "./README.md",
+          "path": "README.md",
           "type": "generic"
         }
       ]
