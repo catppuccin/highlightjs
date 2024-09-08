@@ -1,6 +1,8 @@
 @use "@catppuccin/palette/scss/catppuccin";
 @use "sass:color";
 
+/* https://highlightjs.readthedocs.io/en/latest/css-classes-reference.html */
+
 $highlights: (
   "keyword": "mauve",
   "built_in": "red",
