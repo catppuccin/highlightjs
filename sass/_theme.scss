@@ -9,7 +9,7 @@ $highlights: (
   "type": "yellow",
   "literal": "peach",
   "number": "peach",
-  "operator": "teal",
+  "operator": "sky",
   "punctuation": "subtext1",
   "property": "teal",
   "regexp": "pink",
@@ -28,8 +28,10 @@ $highlights: (
   "doctag": "red",
   "meta": "peach",
   "section": "blue",
-  "tag": "subtext0",
+  "tag": "teal",
+  /* Should be blue as it themes HTML tags, but blue tags next to blue attributes names is hard to read (see `attr` below for blue attribute names). */
   "name": "mauve",
+  /* Should be yellow as it themes HTML attribute names, but it also themes YAML keys. Having innacurate YAML keys looks arguably worse than slightly bad attribute coloring, so blue it is. */
   "attr": "blue",
   "attribute": "green",
   "bullet": "teal",
