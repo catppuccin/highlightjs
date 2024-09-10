@@ -52,8 +52,7 @@ You can then use the files in `@catppuccin/highlightjs/css` or `@catppuccin/high
 
 Embed the [Highlight.js script](https://highlightjs.org/download/) along with one of our themes.
 
-> [!NOTE]
-> The "variable version" assumes that you have a flavor of Catppuccin already present in your CSS variables, in any format of color (e.g. `--ctp-mauve: rgb(136, 57, 239)`, `--ctp-mauve: #8839ef`, `--ctp-mauve: hsl(266deg, 85%, 58%)`, etc).
+> [!NOTE]  
 > If you use [Catppuccin for TailwindCSS](https://github.com/catppuccin/tailwindcss), where your variables are in the format of three comma-separated RGB
 > values (e.g. `--ctp-mauve: 136,57,239`), you should use the "rgb variable" version.
 
