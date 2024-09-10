@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/catppuccin/highlightjs/compare/v0.2.2...v1.0.0) (2024-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove `rgb()` in `catppuccin-variables.css`
+* rename `catppuccin.variables.css` -> `catppuccin-variables.css`
+
+### Features
+
+* add `catppuccin-variables.important` for use with `!important` ([fea1b3a](https://github.com/catppuccin/highlightjs/commit/fea1b3aa5f7f1f2e6a38edf3395cf8f649859f09))
+* add `catppuccin-variables.rgb.css` for use with `rgb()` ([fea1b3a](https://github.com/catppuccin/highlightjs/commit/fea1b3aa5f7f1f2e6a38edf3395cf8f649859f09))
+* add `catppuccin-variables.rgb.important.css` for use with `rgb()` and `!important` ([fea1b3a](https://github.com/catppuccin/highlightjs/commit/fea1b3aa5f7f1f2e6a38edf3395cf8f649859f09))
+
+
+### Bug Fixes
+
+* **preview:** load asciidoc grammar ([#49](https://github.com/catppuccin/highlightjs/issues/49)) ([171ac95](https://github.com/catppuccin/highlightjs/commit/171ac95e3bebbd6941480f65ddaafa5c40b51dd1))
+* **preview:** nix syntax highlighting ([#45](https://github.com/catppuccin/highlightjs/issues/45)) ([0e7b1e1](https://github.com/catppuccin/highlightjs/commit/0e7b1e1b554a9a68121feff1567e75744a9e36a7))
+* update `comment` to `overlay2` ([327e786](https://github.com/catppuccin/highlightjs/commit/327e786242b80b568a67ddaf851b05e489fb3984))
+* update `operator` to `sky` ([601c36e](https://github.com/catppuccin/highlightjs/commit/601c36e0d66996afc0b788959191b9cff2b353f4))
+* update `tag` to `blue` ([601c36e](https://github.com/catppuccin/highlightjs/commit/601c36e0d66996afc0b788959191b9cff2b353f4))
+
+
+### Code Refactoring
+
+* remove `rgb()` in `catppuccin-variables.css` ([fea1b3a](https://github.com/catppuccin/highlightjs/commit/fea1b3aa5f7f1f2e6a38edf3395cf8f649859f09))
+* rename `catppuccin.variables.css` -&gt; `catppuccin-variables.css` ([fea1b3a](https://github.com/catppuccin/highlightjs/commit/fea1b3aa5f7f1f2e6a38edf3395cf8f649859f09))
+
+
+### Build system & distribution
+
+* include `refactor` in CHANGELOG ([fc2dba4](https://github.com/catppuccin/highlightjs/commit/fc2dba40a8cdd81213f999928a4aea7a91280e67))
+
 ## [0.2.2](https://github.com/catppuccin/highlightjs/compare/v0.2.1...v0.2.2) (2024-05-24)
 
 
