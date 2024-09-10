@@ -53,8 +53,9 @@ You can then use the files in `@catppuccin/highlightjs/css` or `@catppuccin/high
 Embed the [Highlight.js script](https://highlightjs.org/download/) along with one of our themes.
 
 > [!NOTE]
-> The "variable version" assumes that you have a flavor of Catppuccin already present in your CSS variables, e.g. `:root { --ctp-mauve:136,57,239; }`.
-> This is particularly useful if you use [Catppuccin TailwindCSS](https://github.com/catppuccin/tailwindcss)
+> The "variable version" assumes that you have a flavor of Catppuccin already present in your CSS variables, in any format of color (e.g. `--ctp-mauve: rgb(136, 57, 239)`, `--ctp-mauve: #8839ef`, `--ctp-mauve: hsl(266deg, 85%, 58%)`, etc).
+> If you use [Catppuccin for TailwindCSS](https://github.com/catppuccin/tailwindcss), where your variables are in the format of three comma-separated RGB
+> values (e.g. `--ctp-mauve: 136,57,239`), you should use the "rgb variable" version.
 
 <!-- x-release-please-start-version -->
 
@@ -65,9 +66,14 @@ Embed the [Highlight.js script](https://highlightjs.org/download/) along with on
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-frappe.css">
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-macchiato.css">
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-mocha.css">
-<!-- variable version -->
+<!-- Variable version -->
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.css">
+<!-- Variable version with !important (higher specificity) -->
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.important.css">
+<!-- RGB variable version -->
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.css">
+<!-- RGB variable version with !important (higher specificity) -->
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.important.css">
 ```
 
 #### jsDelivr
@@ -77,10 +83,14 @@ Embed the [Highlight.js script](https://highlightjs.org/download/) along with on
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-frappe.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-macchiato.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-mocha.css">
-
-<!-- variable version -->
+<!-- Variable version -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.css">
+<!-- Variable version with !important (higher specificity) -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.important.css">
+<!-- RGB variable version -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.css">
+<!-- RGB variable version with !important (higher specificity) -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.important.css">
 ```
 
 <!-- x-release-please-end -->

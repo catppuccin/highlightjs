@@ -59,26 +59,35 @@ $fontStyles: (
   "quote": "italic",
 );
 
-@mixin highlights($flavor, $output: "hex", $prefix: "ctp-", $important: false) {
+@mixin highlights(
+  $flavor,
+  $format: "inject",
+  $prefix: "ctp-",
+  $important: false
+) {
   $colors: map-get(catppuccin.$palette, $flavor);
-  $hex: $output == "hex";
 
   &.hljs {
-    @if $hex {
+    @if $format == "inject" {
       color: map-get($colors, "text") if($important, !important, null);
       background: map-get($colors, "base") if($important, !important, null);
-    } @else {
+    } @else if $format == "rgb" {
       color: rgb(var(--#{$prefix}text)) if($important, !important, null);
       background: rgb(var(--#{$prefix}base)) if($important, !important, null);
+    } @else if $format == "variable" {
+      color: var(--#{$prefix}text) if($important, !important, null);
+      background: var(--#{$prefix}base) if($important, !important, null);
     }
   }
 
   @each $key, $value in $highlights {
     .hljs-#{$key} {
-      @if $hex {
+      @if $format == "inject" {
         color: map-get($colors, $value) if($important, !important, null);
-      } @else {
+      } @else if $format == "rgb" {
         color: rgb(var(--#{$prefix}#{$value})) if($important, !important, null);
+      } @else if $format == "variable" {
+        color: var(--#{$prefix}#{$value}) if($important, !important, null);
       }
 
       @if map-has-key($fontStyles, $key) {
@@ -90,11 +99,14 @@ $fontStyles: (
       }
 
       @if ($key == "addition" or $key == "deletion") {
-        @if $hex {
+        @if $format == "inject" {
           background: color.change(map-get($colors, $value), $alpha: 0.15)
             if($important, !important, null);
-        } @else {
-          background: rgba(var(--#{$prefix}#{$value}), 15%)
+        } @else if $format == "rgb" {
+          background: rgb(var(--#{$prefix}#{$value}) / 15%)
+            if($important, !important, null);
+        } @else if $format == "variable" {
+          background: rgb(from var(--#{$prefix}#{$value}) r g b / 15%)
             if($important, !important, null);
         }
       }
