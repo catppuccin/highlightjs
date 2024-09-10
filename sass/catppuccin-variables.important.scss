@@ -3,7 +3,7 @@
 code {
   @include theme.highlights(
     $flavor: "mocha",
-    $format: "rgb",
+    $format: "variable",
     $important: true
   );
 }
