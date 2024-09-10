@@ -67,13 +67,13 @@ Embed the [Highlight.js script](https://highlightjs.org/download/) along with on
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-macchiato.css">
 <link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-mocha.css">
 <!-- Variable version -->
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.css">
 <!-- Variable version with !important (higher specificity) -->
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.important.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.important.css">
 <!-- RGB variable version -->
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.css">
 <!-- RGB variable version with !important (higher specificity) -->
-<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.important.css">
+<link rel="stylesheet" href="//unpkg.com/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.important.css">
 ```
 
 #### jsDelivr
@@ -84,13 +84,13 @@ Embed the [Highlight.js script](https://highlightjs.org/download/) along with on
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-macchiato.css">
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-mocha.css">
 <!-- Variable version -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.css">
 <!-- Variable version with !important (higher specificity) -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.important.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.important.css">
 <!-- RGB variable version -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.css">
 <!-- RGB variable version with !important (higher specificity) -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin.variables.rgb.important.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@catppuccin/highlightjs@0.2.2/css/catppuccin-variables.rgb.important.css">
 ```
 
 <!-- x-release-please-end -->
