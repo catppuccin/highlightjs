@@ -36,6 +36,6 @@
     "rimraf": "^6.0.0",
     "sass": "^1.58.0",
     "serve": "^14.2.1",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^4.0.0"
   }
 }
