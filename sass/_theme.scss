@@ -22,7 +22,9 @@ $highlights: (
   "variable.constant_": "peach",
   "title": "blue",
   "title.class_": "yellow",
+  "class": "yellow",  /* Deprecated */
   "title.function_": "blue",
+  "function": "blue",  /* Deprecated */
   "params": "text",
   "comment": "overlay2",
   "doctag": "red",
