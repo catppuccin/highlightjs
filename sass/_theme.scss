@@ -1,5 +1,6 @@
 @use "@catppuccin/palette/scss/catppuccin";
 @use "sass:color";
+@use "sass:map";
 
 /* https://highlightjs.readthedocs.io/en/latest/css-classes-reference.html */
 
@@ -65,12 +66,12 @@ $fontStyles: (
   $prefix: "ctp-",
   $important: false
 ) {
-  $colors: map-get(catppuccin.$palette, $flavor);
+  $colors: map.get(catppuccin.$palette, $flavor);
 
   &.hljs {
     @if $format == "inject" {
-      color: map-get($colors, "text") if($important, !important, null);
-      background: map-get($colors, "base") if($important, !important, null);
+      color: map.get($colors, "text") if($important, !important, null);
+      background: map.get($colors, "base") if($important, !important, null);
     } @else if $format == "rgb" {
       color: rgb(var(--#{$prefix}text)) if($important, !important, null);
       background: rgb(var(--#{$prefix}base)) if($important, !important, null);
@@ -83,24 +84,24 @@ $fontStyles: (
   @each $key, $value in $highlights {
     .hljs-#{$key} {
       @if $format == "inject" {
-        color: map-get($colors, $value) if($important, !important, null);
+        color: map.get($colors, $value) if($important, !important, null);
       } @else if $format == "rgb" {
         color: rgb(var(--#{$prefix}#{$value})) if($important, !important, null);
       } @else if $format == "variable" {
         color: var(--#{$prefix}#{$value}) if($important, !important, null);
       }
 
-      @if map-has-key($fontStyles, $key) {
-        @if map-get($fontStyles, $key) == "bold" {
+      @if map.has-key($fontStyles, $key) {
+        @if map.get($fontStyles, $key) == "bold" {
           font-weight: bold if($important, !important, null);
-        } @else if map-get($fontStyles, $key) == "italic" {
+        } @else if map.get($fontStyles, $key) == "italic" {
           font-style: italic if($important, !important, null);
         }
       }
 
       @if ($key == "addition" or $key == "deletion") {
         @if $format == "inject" {
-          background: color.change(map-get($colors, $value), $alpha: 0.15)
+          background: color.change(map.get($colors, $value), $alpha: 0.15)
             if($important, !important, null);
         } @else if $format == "rgb" {
           background: rgb(var(--#{$prefix}#{$value}) / 15%)
