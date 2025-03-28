@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.1](https://github.com/catppuccin/highlightjs/compare/v1.0.0...v1.0.1) (2025-03-26)
+
+
+### Bug Fixes
+
+* deprecated sass syntax ([#63](https://github.com/catppuccin/highlightjs/issues/63)) ([8841537](https://github.com/catppuccin/highlightjs/commit/8841537eece5d751d489d7245a2f4a4dc4516673))
+
 ## [1.0.0](https://github.com/catppuccin/highlightjs/compare/v0.2.2...v1.0.0) (2024-09-10)
 
 
