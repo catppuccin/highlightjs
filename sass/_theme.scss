@@ -106,7 +106,7 @@ $fontStyles: (
           background: rgb(var(--#{$prefix}#{$value}) / 15%)
             if($important, !important, null);
         } @else if $format == "variable" {
-          background: rgb(from var(--#{$prefix}#{$value}) r g b / 15%)
+          background: rgb(from var(--#{$prefix}#{$value}) (r g b) / 15%)
             if($important, !important, null);
         }
       }
