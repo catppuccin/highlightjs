@@ -31,7 +31,7 @@
     "prepare": "npm run build"
   },
   "devDependencies": {
-    "@catppuccin/palette": "^1.0.0",
+    "@catppuccin/palette": "^2.0.0-beta.1",
     "@catppuccin/tailwindcss": "^0.1.6",
     "rimraf": "^6.0.0",
     "sass": "^1.85.1",

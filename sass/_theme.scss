@@ -66,12 +66,11 @@ $fontStyles: (
   $prefix: "ctp-",
   $important: false
 ) {
-  $colors: map.get(catppuccin.$palette, $flavor);
 
   &.hljs {
     @if $format == "inject" {
-      color: map.get($colors, "text") if($important, !important, null);
-      background: map.get($colors, "base") if($important, !important, null);
+      color: catppuccin.get-color($flavor, "text") if($important, !important, null);
+      background: catppuccin.get-color($flavor, "base") if($important, !important, null);
     } @else if $format == "rgb" {
       color: rgb(var(--#{$prefix}text)) if($important, !important, null);
       background: rgb(var(--#{$prefix}base)) if($important, !important, null);
@@ -84,7 +83,7 @@ $fontStyles: (
   @each $key, $value in $highlights {
     .hljs-#{$key} {
       @if $format == "inject" {
-        color: map.get($colors, $value) if($important, !important, null);
+        color: catppuccin.get-color($flavor, $value) if($important, !important, null);
       } @else if $format == "rgb" {
         color: rgb(var(--#{$prefix}#{$value})) if($important, !important, null);
       } @else if $format == "variable" {
@@ -101,7 +100,7 @@ $fontStyles: (
 
       @if ($key == "addition" or $key == "deletion") {
         @if $format == "inject" {
-          background: color.change(map.get($colors, $value), $alpha: 0.15)
+          background: color.change(catppuccin.get-color($flavor, $value), $alpha: 0.15)
             if($important, !important, null);
         } @else if $format == "rgb" {
           background: rgb(var(--#{$prefix}#{$value}) / 15%)
