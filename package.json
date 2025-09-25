@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@catppuccin/palette": "^1.0.0",
-    "@catppuccin/tailwindcss": "^0.1.6",
+    "@catppuccin/tailwindcss": "^1.0.0",
     "rimraf": "^6.0.0",
     "sass": "^1.85.1",
     "serve": "^14.2.1",
