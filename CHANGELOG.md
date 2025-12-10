@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/catppuccin/highlightjs/compare/v1.0.1...v2.0.0) (2025-12-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* change code block background color from base to mantle ([#69](https://github.com/catppuccin/highlightjs/issues/69))
+
+### Bug Fixes
+
+* change code block background color from base to mantle ([#69](https://github.com/catppuccin/highlightjs/issues/69)) ([79a8acc](https://github.com/catppuccin/highlightjs/commit/79a8accb89c5a94010ed3968cb2b04c3d679b6ba))
+
 ## [1.0.1](https://github.com/catppuccin/highlightjs/compare/v1.0.0...v1.0.1) (2025-03-26)
 
 
