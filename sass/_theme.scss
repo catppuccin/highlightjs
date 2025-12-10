@@ -71,13 +71,13 @@ $fontStyles: (
   &.hljs {
     @if $format == "inject" {
       color: map.get($colors, "text") if($important, !important, null);
-      background: map.get($colors, "base") if($important, !important, null);
+      background: map.get($colors, "mantle") if($important, !important, null);
     } @else if $format == "rgb" {
       color: rgb(var(--#{$prefix}text)) if($important, !important, null);
-      background: rgb(var(--#{$prefix}base)) if($important, !important, null);
+      background: rgb(var(--#{$prefix}mantle)) if($important, !important, null);
     } @else if $format == "variable" {
       color: var(--#{$prefix}text) if($important, !important, null);
-      background: var(--#{$prefix}base) if($important, !important, null);
+      background: var(--#{$prefix}mantle) if($important, !important, null);
     }
   }
 
