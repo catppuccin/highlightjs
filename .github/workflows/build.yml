@@ -23,7 +23,7 @@ jobs:
           npm run build
 
       - name: Upload CSS
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: "Catppuccin HighlightJS CSS"
           path: css
